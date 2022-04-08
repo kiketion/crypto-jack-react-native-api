@@ -35,7 +35,7 @@ const App = () => {
           style={styles.inputSearch}
           placeholder='Search a Coin'
           placeholderTextColor='#858585'
-          onChangeText={(text) => setSearch(text)}
+          onChangeText={(text) => setSearch(text.toLowerCase())}
         />
       </View>
       <FlatList
